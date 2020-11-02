@@ -37,7 +37,7 @@ class CityListTest {
         City city = new City("Charlottetown", "Prince Edward Island");
         cityList.add(city);
 
-        assertEquals(2, city.compareTo(cityList.getCities().get(0)));
-        assertEquals(2, mockCity().compareTo(cityList.getCities().get(1)));
+        assertEquals(0, city.compareTo(cityList.getCities().get(0)));
+        assertEquals(0, mockCity().compareTo(cityList.getCities().get(1)));
     }
 }
